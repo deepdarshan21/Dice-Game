@@ -88,6 +88,6 @@ function game() {
                 document.querySelector("h4").innerText = player2.toUpperCase() + " WINS🎐🎐 BY " + player1Count + ":" + player2Count;
             else
                 document.querySelector("h4").innerText = "DRAW BY " + player1Count + ":" + player2Count;
-        }, 2000);
+        }, 1000);
     }
 }
