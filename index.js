@@ -1,6 +1,6 @@
 var player1, player2;
 var maxCount, count = 0;
-var player1Count=0, player2Count=0;
+var player1Count = 0, player2Count = 0;
 document.querySelector(".final").classList.toggle("final-display");
 
 
@@ -71,22 +71,23 @@ function game() {
         document.querySelector("h3").innerText = "Match Draws";
 
     // console.log(count, maxCount);
-    
+
 
     if (count == maxCount) {
 
-        alert("Game Over");
+        // alert("Game Over");
+        setTimeout(function () {
 
-        document.querySelector(".final").classList.toggle("final-display");
-        document.querySelector(".container").style.display = "none"
-        document.querySelector("footer").style.display = "none";
-        document.querySelector(".popup").style.display = "none";
-        if(player1Count>player2Count)
-            document.querySelector("h4").innerText=player1.toUpperCase()+" WINS🎐🎐 BY " + player1Count+":"+player2Count;
-        else if(player1Count<player2Count)
-            document.querySelector("h4").innerText=player2.toUpperCase()+" WINS🎐🎐 BY " + player1Count+":"+player2Count;
-        else
-            document.querySelector("h4").innerText="DRAW BY " + player1Count+":"+player2Count;
-
+            document.querySelector(".final").classList.toggle("final-display");
+            document.querySelector(".container").style.display = "none"
+            document.querySelector("footer").style.display = "none";
+            document.querySelector(".popup").style.display = "none";
+            if (player1Count > player2Count)
+                document.querySelector("h4").innerText = player1.toUpperCase() + " WINS🎐🎐 BY " + player1Count + ":" + player2Count;
+            else if (player1Count < player2Count)
+                document.querySelector("h4").innerText = player2.toUpperCase() + " WINS🎐🎐 BY " + player1Count + ":" + player2Count;
+            else
+                document.querySelector("h4").innerText = "DRAW BY " + player1Count + ":" + player2Count;
+        }, 2000);
     }
 }
