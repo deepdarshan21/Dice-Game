@@ -10,6 +10,7 @@ h1 {
   font-size: 8rem;
   text-shadow: 5px 0 #232931;
   color: #4ecca3;
+  text-align: center;
 }
 
 h3  {
@@ -35,13 +36,44 @@ footer {
   /* position: absolute; */
   /* bottom: 10px; */
   width: 100%;
+  /* visibility: hidden; */
+  display: none;
 }
+
+input {
+  height: 2rem;
+  width: 21rem;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+label {
+  text-align: left;
+  margin-right: 10px;
+  display: inline-block;
+  width: 300px;
+}
+
+/* h2 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 4rem;
+
+}
+
+h4 {
+  display: block;
+  font-family: cursive;
+  font-size: 3rem;
+} */
 
 /* Class */
 .container {
   width: 70%;
   margin: auto;
   text-align: center;
+  /* visibility: hidden; */
+  display: none;
 }
 
 .dice {
@@ -63,4 +95,65 @@ footer {
   width: 80%;
 }
 
+.popup {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* text-align: center; */
+  margin: auto;
+}
+
+.details {
+  width: 50%;
+  border: 2px double white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.start-play {
+  display: inline-block;
+  width: 21rem;
+  height: 3rem;
+  margin: 1.5rem 0 0;
+  cursor: pointer;
+  background-color: #0d6efd;
+}
+
+.final {
+  display: none;
+}
+
+.final-display {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  flex-direction:column;
+}
+
 /* Id */
+
+
+
+/* Important */
+
+h2 {
+  display: block;
+  text-align: center;
+  margin: 3rem 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 4rem;
+
+}
+
+h4 {
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
+  width: 100%;
+  font-family: cursive;
+  font-size: 2.5rem;
+  color: wheat;
+}

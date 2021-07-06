@@ -12,20 +12,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Dice Game😀</h1>
     <div class="container">
-        <h1>Dice Game😀</h1>
         <h3>Click on Start Button</h3>
         <div class="dice">
-            <p>Player 1</p>
+            <p class="player-name">Player 1</p>
             <img src="images/dice6.png" alt="" class="dice-image" id="dice1">
         </div>
         <div class="dice">
-            <p>Player 2</p>
+            <p class="player-name">Player 2</p>
             <img src="images/dice6.png" alt="" class="dice-image" id="dice2">
         </div>
         <button class="btn" onclick="game()">Start</button>
     </div>
     <footer>Made by Deepdarshan</footer>
+    <div class="popup">
+        <form class="details" action="">
+            <label for="player1">PLAYER 1 NAME: </label>
+            <input type="text" name="player1" id="player1" maxlength="20" placeholder="Player 1">
+            <br>
+            <label for="player2">PLAYER 2 NAME: </label>
+            <input type="text" name="player2" id="player2" maxlength="20" placeholder="Player 2">
+            <br>
+            <label for="count">PLAY COUNT: </label>
+            <input type="number" name="count" id="count" max="30" placeholder="Maximum Possible 30" required>
+            <input type="button" value="PLAY" class="start-play" onclick="popUpJS()">
+            <!-- <buttton class="start-play" onclick="popUpJS()">PLAY</buttton> -->
+        </form>
+    </div>
+    <div class="final final-display">
+        <h2>Final Result</h2>
+        <h4>Player4 wins</h4>
+        <!-- <p>dddd</p> -->
+    </div>
 
 
 </body>
