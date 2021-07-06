@@ -1,0 +1,66 @@
+/* Tags */
+body {
+  margin: 0;
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  font-size: 8rem;
+  text-shadow: 5px 0 #232931;
+  color: #4ecca3;
+}
+
+h3  {
+  margin: 30px;
+  font-family: "", cursive;
+  font-size: 3rem;
+  /* text-shadow: 5px 0 #232931; */
+  color: red;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ecca3;
+  margin: 5px 0;
+  font-family: "Indie Flower", cursive;
+}
+
+footer {
+  /* margin-top: 5%; */
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  /* position: absolute; */
+  /* bottom: 10px; */
+  width: 100%;
+}
+
+/* Class */
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  margin-right: 30px;
+  padding: 0 10px;
+  border: 2px dotted white;
+}
+
+.btn {
+    display: block;
+    height: 2rem;
+    width: 8rem;
+    margin: 30px auto 20px;
+}
+
+.dice-image {
+  width: 80%;
+}
+
+/* Id */
