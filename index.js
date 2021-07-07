@@ -31,31 +31,38 @@ function game() {
     var dice1, dice2;
     dice1 = Math.floor(Math.random() * 6) + 1;
     dice2 = Math.floor(Math.random() * 6) + 1;
-    // console.log(dice1, dice2);
-    if (dice1 === 1)
-        document.querySelector("#dice1").setAttribute("src", "images/dice1.png");
-    if (dice2 === 1)
-        document.querySelector("#dice2").setAttribute("src", "images/dice1.png");
-    if (dice1 === 2)
-        document.querySelector("#dice1").setAttribute("src", "images/dice2.png");
-    if (dice2 === 2)
-        document.querySelector("#dice2").setAttribute("src", "images/dice2.png");
-    if (dice1 === 3)
-        document.querySelector("#dice1").setAttribute("src", "images/dice3.png");
-    if (dice2 === 3)
-        document.querySelector("#dice2").setAttribute("src", "images/dice3.png");
-    if (dice1 === 4)
-        document.querySelector("#dice1").setAttribute("src", "images/dice4.png");
-    if (dice2 === 4)
-        document.querySelector("#dice2").setAttribute("src", "images/dice4.png");
-    if (dice1 === 5)
-        document.querySelector("#dice1").setAttribute("src", "images/dice5.png");
-    if (dice2 === 5)
-        document.querySelector("#dice2").setAttribute("src", "images/dice5.png");
-    if (dice1 === 6)
-        document.querySelector("#dice1").setAttribute("src", "images/dice6.png");
-    if (dice2 === 6)
-        document.querySelector("#dice2").setAttribute("src", "images/dice6.png");
+    console.log(dice1, dice2);
+
+    var player1Path, player2Path;
+    player1Path = "images/dice" + dice1 + ".png";
+    player2Path = "images/dice" + dice2 + ".png";
+    document.querySelector("#dice1").setAttribute("src", player1Path);
+    document.querySelector("#dice2").setAttribute("src", player2Path);
+
+    // if (dice1 === 1)
+    //     document.querySelector("#dice1").setAttribute("src", "images/dice1.png");
+    // if (dice2 === 1)
+    //     document.querySelector("#dice2").setAttribute("src", "images/dice1.png");
+    // if (dice1 === 2)
+    //     document.querySelector("#dice1").setAttribute("src", "images/dice2.png");
+    // if (dice2 === 2)
+    //     document.querySelector("#dice2").setAttribute("src", "images/dice2.png");
+    // if (dice1 === 3)
+    //     document.querySelector("#dice1").setAttribute("src", "images/dice3.png");
+    // if (dice2 === 3)
+    //     document.querySelector("#dice2").setAttribute("src", "images/dice3.png");
+    // if (dice1 === 4)
+    //     document.querySelector("#dice1").setAttribute("src", "images/dice4.png");
+    // if (dice2 === 4)
+    //     document.querySelector("#dice2").setAttribute("src", "images/dice4.png");
+    // if (dice1 === 5)
+    //     document.querySelector("#dice1").setAttribute("src", "images/dice5.png");
+    // if (dice2 === 5)
+    //     document.querySelector("#dice2").setAttribute("src", "images/dice5.png");
+    // if (dice1 === 6)
+    //     document.querySelector("#dice1").setAttribute("src", "images/dice6.png");
+    // if (dice2 === 6)
+    //     document.querySelector("#dice2").setAttribute("src", "images/dice6.png");
 
     // console.log(player1, player2);
 
