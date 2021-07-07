@@ -18,7 +18,7 @@ function popUpJS() {
     document.querySelectorAll(".player-name")[0].innerText = player1;
     document.querySelectorAll(".player-name")[1].innerText = player2;
     maxCount = document.querySelector("#count").value;
-    console.log(maxCount);
+    // console.log(maxCount);
 }
 
 function game() {
@@ -31,7 +31,7 @@ function game() {
     var dice1, dice2;
     dice1 = Math.floor(Math.random() * 6) + 1;
     dice2 = Math.floor(Math.random() * 6) + 1;
-    console.log(dice1, dice2);
+    // console.log(dice1, dice2);
 
     var player1Path, player2Path;
     player1Path = "images/dice" + dice1 + ".png";
